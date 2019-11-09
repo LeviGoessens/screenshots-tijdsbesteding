@@ -6,7 +6,7 @@
 Describe the goals of the current iteration/assignment in a short sentence.
 ```
 Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
-
+```
 ## Test plan
 
 1. In de lokale map gaan we naar de plaats met de vagrant file en doen we 'Git bash here'.
@@ -25,6 +25,7 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
     ```
         - name: pu001
           ip: 192.0.2.10
+    ```
 3. Vervolgens passen we het bestand site.yml aan
     ```
         - host: pu001
@@ -33,11 +34,13 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
           - bertvv.rh-base
     Op deze manier voegen we de verschillende servers toe, steeds met de rollen voor de specifieke opdracht 
     (te vinden vie ansible galaxy, bertvv)
+    ```
 4. Indien hier een rol wordt toegevoegd, dient op de server het volgende commando gebruikt te worden: ./scripts/role-deps.sh
 5. We moeten nu de nodige zaken toevoegen in group_vars/all.yml (deze zaken worden op elke server gebruikt)
     ```
         rhbase_repositories:
           - epel-release
+    ```
 6. De verschillende packages worden toegevoegd: 
     ```
     rhbase_install_packages:
@@ -48,6 +51,7 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
       - tree
       - vim-enhanced
       - wget
+    ```
 7. We moeten ook de User toevoegen met zijn SSH keys.
     ```
     rhbase_users:
@@ -55,9 +59,10 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
         groups:
           - wheel
         password: "password"
-    ```
+    
     rhbase_ssh_user: levi
     rhbase_ssh_key: ssh-rsa "de gegenereerde key"
+    ```
 
 
 
