@@ -35,7 +35,8 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
     Op deze manier voegen we de verschillende servers toe, steeds met de rollen voor de specifieke opdracht 
     (te vinden vie ansible galaxy, bertvv)
     ```
-4. Indien hier een rol wordt toegevoegd, dient op de server het volgende commando gebruikt te worden: ./scripts/role-deps.sh
+4. Indien hier een rol wordt toegevoegd, dient op de server het volgende commando gebruikt te worden: 
+**./scripts/role-deps.sh**
 5. We moeten nu de nodige zaken toevoegen in group_vars/all.yml (deze zaken worden op elke server gebruikt)
     ```
         rhbase_repositories:
