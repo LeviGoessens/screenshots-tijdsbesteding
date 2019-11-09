@@ -38,11 +38,12 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
 4. Indien hier een rol wordt toegevoegd, dient op de server het volgende commando gebruikt te worden: 
 **./scripts/role-deps.sh**
 5. We moeten nu de nodige zaken toevoegen in group_vars/all.yml (deze zaken worden op elke server gebruikt)
+    - De EPEL Repository
     ```
         rhbase_repositories:
           - epel-release
     ```
-6. De verschillende packages worden toegevoegd: 
+    - De verschillende packages worden toegevoegd: 
     ```
     rhbase_install_packages:
       - bash-completion
@@ -53,7 +54,7 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
       - vim-enhanced
       - wget
     ```
-7. We moeten ook de User toevoegen met zijn SSH keys.
+    - We moeten ook de User toevoegen met zijn SSH keys.
     ```
     rhbase_users:
       - name: levi
@@ -63,6 +64,10 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
     
     rhbase_ssh_user: levi
     rhbase_ssh_key: ssh-rsa "de gegenereerde key"
+    ```
+    - Tot slot voegen we een MOTD toe:
+    ```
+    rhbase_motd: true
     ```
 
 
