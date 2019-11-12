@@ -30,15 +30,15 @@ Disk2:
 
 Open Server Manager -> File and Storage Services -> Shares
 
-* Er zijn 6 shares **Er zijn 8 shares**
+* Er zijn 6 shares **Er zijn 8 shares**   
 De shares:
 1. AdminData **OK**
 2. DirData **OK**
 3. HomeDirs **OK**
 4. ITData **OK**
 5. ProfileDirs **OK**
-6. ShareVerkoop **OK**
-**7. OntwikkelingData**
+6. ShareVerkoop **OK**   
+**7. OntwikkelingData**   
 **8. VerkoopData**
 
 ## De schaduw kopie
