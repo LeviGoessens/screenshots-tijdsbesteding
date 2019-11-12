@@ -30,7 +30,7 @@ Disk2:
 
 Open Server Manager -> File and Storage Services -> Shares
 
-* Er zijn 6 shares **Er zijn 8 shares**   
+* Er zijn 6 shares  **--->Er zijn 8 shares**   
 De shares:
 1. AdminData **OK**
 2. DirData **OK**
