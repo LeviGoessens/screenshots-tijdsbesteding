@@ -4,9 +4,9 @@
 - Github repo: <https://github.com/HoGentTIN/elnx-1920-sme-LeviGoessens>
 
 Describe the goals of the current iteration/assignment in a short sentence.
-```
+
 Opzetten van een fileshare server via Ansible om zo de installatie en configuratie te automatiseren voor zowel SMB als FTP.
-```
+
 
 ## Test plan
 
@@ -54,7 +54,7 @@ Opzetten van een fileshare server via Ansible om zo de installatie en configurat
 	- comment (vb. Steven Hermans, 'management')
 	- password (de passwords worden meegegeven als hash, password is zelfde als name maar dan als crypt-sha512 via 'https://www.mkpasswd.net/', begint steeds met $6$).
 	- groups (de groups waarin de users zich bevinden, in dit geval management alsook public(geldt voor iedereen).)
-```
+	```
 7. We moeten ook een user voor onszelf aanmaken, in mijn geval levi(moet zelfde naam zijn als user in site.yml!). Deze user is iets uitgebreider:
 	```
   - name: levi
@@ -110,12 +110,20 @@ Opzetten van een fileshare server via Ansible om zo de installatie en configurat
 
 ## Test report
 
-- We voeren het commando **sudo vagrant/test/runbats.sh** uit op de server pr011, indien alle testen slagen is deze opdracht geslaagd.
+- We voeren het commando **sudo vagrant/test/runbats.sh** uit op de server pr011, alle tests moeten slagen.
+![pr001](screenshots/assignment03_tests.PNG)
+
 - Indien alles correct geconfigureerd is, is het ook mogelijk om op de volgende manieren de shares te bekijken:
 	```
 	- In browser surven naar ftp://172.16.192.11 en inloggen als een van de voorgaande users
+	```
+	![pr011](screenshots/ftp.PNG)
+	```
 	- in file explorer \\files\ typen en inloggen als een van de voorgaande users
 	```
+	![pr011](screenshots/files.PNG)
+
+	
 
 ## Resources
 
