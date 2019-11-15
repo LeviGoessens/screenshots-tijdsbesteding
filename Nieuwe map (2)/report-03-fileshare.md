@@ -111,17 +111,17 @@ Opzetten van een fileshare server via Ansible om zo de installatie en configurat
 ## Test report
 
 - We voeren het commando **sudo vagrant/test/runbats.sh** uit op de server pr011, alle tests moeten slagen.
-![pr001](screenshots/assignment03_tests.PNG)
+![pr001](fotos/assignment03_tests.PNG)
 
 - Indien alles correct geconfigureerd is, is het ook mogelijk om op de volgende manieren de shares te bekijken:
 	```
 	- In browser surven naar ftp://172.16.192.11 en inloggen als een van de voorgaande users
 	```
-	![pr011](screenshots/ftp.PNG)
+	![pr011](fotos/ftp.PNG)
 	```
 	- in file explorer \\files\ typen en inloggen als een van de voorgaande users
 	```
-	![pr011](screenshots/files.PNG)
+	![pr011](fotos/files.PNG)
 
 	
 
