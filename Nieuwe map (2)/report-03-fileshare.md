@@ -126,11 +126,12 @@ Opzetten van een fileshare server via Ansible om zo de installatie en configurat
 	
 
 ## Resources
-
-    - https://galaxy.ansible.com/bertvv/rh-base
+	```
+   	- https://galaxy.ansible.com/bertvv/rh-base
 	- https://galaxy.ansible.com/bertvv/samba
 	- https://galaxy.ansible.com/bertvv/vsftpd
 	- https://www.mkpasswd.net/
 	- https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html
+	```
 
 
