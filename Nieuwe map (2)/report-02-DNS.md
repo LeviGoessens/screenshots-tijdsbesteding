@@ -88,11 +88,16 @@ Opzetten van een LAMP-stack via Ansible om zo de installatie en configuratie te 
 
 ## Test report
 
-- We voeren het commando **sudo vagrant/test/runbats.sh** uit op beide servers, indien alle testen slagen is deze opdracht geslaagd.
+- We voeren het commando **sudo vagrant/test/runbats.sh** uit op beide servers, alle tests moeten slagen.
+
+![pr001](fotos/assignment02_tests001.PNG)
+![pr002](fotos/assignment02_tests002.PNG)
 - Indien alles correct geconfigureerd is, is het ook mogelijk om vanop onze host machine een nlookup uit te voeren met de onze DNS servers
 	```
 	Aangezien het een authoritative-only DNS server kunnen we het volgende uitvoeren:
 	nslookup www.avalon.lan 172.16.192.1 en nslookup www.avalon.lan 172.16.192.2
+	```
+![pr001](fotos/nslookup.PNG)
 
 
 ## Resources
