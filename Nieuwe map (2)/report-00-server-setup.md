@@ -76,6 +76,7 @@ Het opzetten van de basic server waarvan de andere servers gebruik kunnen maken.
 ## Test report
 
 - We voeren het commando **sudo vagrant/test/runbats.sh** uit, indien alle testen slagen is deze opdracht geslaagd.
+![pu001](fotos/assignment00_tests.PNG)
 
 ## Resources
 
