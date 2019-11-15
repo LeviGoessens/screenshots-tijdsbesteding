@@ -77,14 +77,17 @@ Opzetten van een LAMP-stack via Ansible om zo de installatie en configuratie te 
 ## Test report
 
 - We voeren het commando **sudo vagrant/test/runbats.sh** uit, indien alle testen slagen is deze opdracht geslaagd.
+![pu001](fotos/assignment01_tests.PNG)
 - Via http://192.0.2.10/wordpress/ moet de default pagina zichtbaar zijn.
+![pu001](fotos/nslookup.PNG)
 
 ## Resources
-
+	```
         - https://galaxy.ansible.com/bertvv/rh-base
 	- https://galaxy.ansible.com/bertvv/httpd
 	- https://galaxy.ansible.com/bertvv/wordpress
 	- https://galaxy.ansible.com/bertvv/mariadb
 	- https://wiki.centos.org/HowTos/Https
         - https://www.ibm.com/cloud/learn/lamp-stack-explained
+	```
 
