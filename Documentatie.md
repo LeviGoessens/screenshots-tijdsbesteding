@@ -4,10 +4,10 @@ Making Ansible a bit faster
    - callback_whitelist = profile_tasks
 2. Wanneer we nu de webserver (pu001) provisionen, krijgen we de totale doorlooptijd en de tijd per onderdeel
 3. Zonder enige versnelling:
-   ```
+```
    PLAY RECAP **********************************\***********************************
    pu001 : ok=79 changed=0 unreachable=0 failed=0 skipped=35 rescued=0 ignored=0
-   ```
+   
 
 # Thursday 12 December 2019 11:01:00 +0000 (0:00:00.027) 0:00:53.769 **\***
 
@@ -32,6 +32,6 @@ bertvv.rh-base : Install | Ensure the machine-ID is available ----------- 0.79s
 bertvv.mariadb : Configure swappiness ----------------------------------- 0.78s
 bertvv.rh-base : Install | Ensure specified packages are NOT installed --- 0.77s
 
-    ```
+```
 
 4. De totale doorlooptijd is op dit moment 53.769 seconden
