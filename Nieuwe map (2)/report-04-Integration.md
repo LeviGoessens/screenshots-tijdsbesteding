@@ -3,7 +3,7 @@
 - Student name: Levi Goessens
 - Github repo: <https://github.com/HoGentTIN/elnx-1920-sme-LeviGoessens>
 
-Describe the goals of the current iteration/assignment in a short sentence.
+Describe the goals of the current iteration/assignment in a short sentence.   
 	```
 Installatie en configuratie van DHCP server met ansible, opzetten van een router met VyOs.
 	```
